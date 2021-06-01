@@ -969,3 +969,48 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1622488251342	Marionette	INFO	Stopped listening on port 59905
+1622566013626	geckodriver	INFO	Listening on 127.0.0.1:62284
+1622566016649	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\johan\\AppData\\Local\\robocorp\\temp\\51c360c4fd1e0bd2\\rust_mozprofile5RQcSd"
+1622566017255	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622566021103	Marionette	INFO	Listening on port 62293
+1622566021699	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1622566087948	Marionette	INFO	Stopped listening on port 62293
+1622566415817	geckodriver	INFO	Listening on 127.0.0.1:62699
+1622566418858	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\johan\\AppData\\Local\\robocorp\\temp\\6262ec0aff42f594\\rust_mozprofilemI4LbF"
+1622566419541	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622566422968	Marionette	INFO	Listening on port 62707
+1622566423104	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1622566484630	Marionette	INFO	Stopped listening on port 62707
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622567255806	geckodriver	INFO	Listening on 127.0.0.1:63242
+1622567258829	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\johan\\AppData\\Local\\robocorp\\temp\\f14d3610f0cd1e70\\rust_mozprofileho9S5h"
+1622567259534	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622567262701	Marionette	INFO	Listening on port 63250
+1622567263033	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1622567333166	Marionette	INFO	Stopped listening on port 63250
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622567634037	geckodriver	INFO	Listening on 127.0.0.1:63569
+1622567637058	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\johan\\AppData\\Local\\robocorp\\temp\\dbc4f621e89a2bc9\\rust_mozprofileF3FLbo"
+1622567637732	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622567640545	Marionette	INFO	Listening on port 63577
+1622567640760	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1622567722558	Marionette	INFO	Stopped listening on port 63577
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

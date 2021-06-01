@@ -8,6 +8,8 @@ Library     RPA.Tables
 Library     RPA.PDF
 Library     RPA.BuiltIn
 Library     RPA.Archive
+Library     RPA.Robocloud.Secrets
+Library     RPA.Dialogs
 # -
 
 
@@ -17,8 +19,17 @@ ${GLOBAL_RETRY_AMOUNT}    5
 ${GLOBAL_RETRY_INTERVAL}    0.5s
 
 *** Keywords ***
+Ask User For Url
+    Add text input    url
+    ...               Please enter the link for the .csv file
+    ...               https://robotsparebinindustries.com/orders.csv
+    ${response}=      Run dialog
+    [Return]      ${response.url}
+
+*** Keywords ***
 Download The Robot List
-    Download        https://robotsparebinindustries.com/orders.csv      overwrite=True
+    ${csv_link}=        Ask User For Url
+    Download        ${csv_link}      overwrite=True
 
 *** Keywords ***
 Accept The Popup
@@ -76,10 +87,16 @@ Fill In All Robot Info
 Put Receipts In A Zip File
     Archive Folder With Zip    ${CURDIR}${/}output    receipts.zip   include=*.pdf
 
+*** Keywords ***
+Read Some Data From Vault
+    ${secret}=      Get Secret    shhh
+    Log     Don't tell anyone, but my username is ${secret}[username] and my password ${secret}[password]
+
 *** Tasks ***
 Open the website in an available browser
     Download The Robot List
     Open Available Browser      ${URL}
     Fill In All Robot Info
     Put Receipts In A Zip File
+    Read Some Data From Vault
     [Teardown]      Close Browser
